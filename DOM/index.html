@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Perpustakaan Mini - DOM</title>
+<style>
+/* Style dasar agar tampilan rapi */
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f7;
+    margin:0;
+    padding:30px;
+}
+
+h1{
+    color:#2c3e50;
+}
+
+.buku{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.buku:hover{
+    transform:translateY(-5px);
+}
+
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
+
+button:disabled{
+    background:gray;
+    cursor:not-allowed;
+}
+
+.bukuDipinjam{
+    background:#ffeaea !important;
+    border-left:6px solid crimson;
+}
+</style>
+</head>
+<body>
+<!-- JUDUL UTAMA: akan diambil pakai querySelector -->
+<h1 id="judul-perpus">📚 Perpustakaan Mini</h1>
+<p id="info-stok">Total Buku: 0</p>
+<!-- CONTAINER: akan diisi daftar buku pakai innerHTML -->
+<div id="daftar-buku"></div>
+<!-- CONTOH ATRIBUT: gambar cover akan diganti src-nya via JS -->
+<h3>Cover Buku Terpilih:</h3>
+<img id="cover-buku" src="https://via.placeholder.com/120x150" alt="cover buku" width="120">
+<!-- Hubungkan ke file JS -->
+<script src="/DOM/app.js"></script>
+</body>
+</html>
