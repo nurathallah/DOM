@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan DOM</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="judul">Perpustakaan Sekolah</h1>
+
+        <!-- Input pencarian -->
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Cari nama buku..."
+        >
+
+        <!-- Form tambah buku -->
+        <form id="formBuku">
+
+            <input 
+                type="text" 
+                id="namaBuku" 
+                placeholder="Nama buku"
+                required
+            >
+
+            <input 
+                type="text" 
+                id="penulis" 
+                placeholder="Nama penulis"
+                required
+            >
+
+            <button type="submit">Tambah Buku</button>
+
+        </form>
+
+        <h2>Daftar Buku</h2>
+
+        <div id="daftarBuku">
+
+            <div class="buku">
+                <h3 class="nama-buku">Pemrograman JavaScript</h3>
+                <p class="penulis">Penulis: Ahmad</p>
+                <button class="hapus">Hapus</button>
+            </div>
+
+            <div class="buku">
+                <h3 class="nama-buku">Belajar HTML & CSS</h3>
+                <p class="penulis">Penulis: Budi</p>
+                <button class="hapus">Hapus</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
