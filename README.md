@@ -2,7 +2,11 @@
 querySelector
 querySelector digunakan untuk mengambil satu elemen HTML berdasarkan selector seperti id, class, atau tag.
 Contoh dari kode kamu:
+
+```javascript
 const judul = document.querySelector("#judul");
+```
+
 Artinya:
 document → mengambil dari halaman HTML.
 querySelector() → mencari elemen.
@@ -13,7 +17,11 @@ Jadi, kode tersebut mengambil elemen:
 querySelectorAll
 querySelectorAll digunakan untuk mengambil semua elemen yang sesuai dengan selector.
 Contoh:
+
+```javascript
 const semuaBuku = document.querySelectorAll(".buku");
+```
+
 Artinya mengambil semua elemen yang memiliki class buku.
 Kemudian:
 console.log("Jumlah buku:", semuaBuku.length);
@@ -30,7 +38,9 @@ Digunakan untuk mengubah atau mengambil teks dari sebuah elemen.
 
 Contoh:
 
+```javascript
 judul.textContent = "Perpustakaan Digital";
+```
 
 Hasilnya:
 
@@ -38,17 +48,23 @@ Perpustakaan Digital
 innerHTML
 
 Digunakan untuk mengubah isi elemen sekaligus bisa memasukkan tag HTML.
-
 Contoh:
+
+```javascript
 judul.innerHTML = "Perpustakaan <span>Digital</span>";
+ ```
+
 <span> akan dianggap sebagai elemen HTML, bukan teks biasa.
 Jadi innerHTML cocok jika kita ingin memasukkan HTML ke dalam sebuah elemen.
 innerText
 Digunakan untuk mengambil teks yang terlihat pada elemen.
-
 Contoh:
+```javascript
 console.log("Isi judul:", judul.innerText);
+```
+
 Kode tersebut menampilkan teks yang ada pada judul ke console.
+
 
 Perbedaannya:
 Property	Fungsi
@@ -87,8 +103,11 @@ setAttribute() digunakan untuk mengubah atau menambahkan atribut HTML.
 Manipulasi Style
 
 Contoh:
+
+```javascript
 judul.style.color = "darkblue";
 judul.style.fontSize = "32px";
+```
 
 Artinya JavaScript mengubah tampilan judul:
 
